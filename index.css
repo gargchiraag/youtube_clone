@@ -17,6 +17,12 @@
 }
 #inputTag{
     flex-grow: 1;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    padding: 10px;
+    width: 300px;
+    color: black;
 }
 .bodyDiv{
     display: flex;
@@ -29,6 +35,8 @@
     flex-direction: column;
     height: 100vh;
     align-items: center;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 #contentBar{
     width: 80%;
@@ -44,12 +52,60 @@
     width: fit-content;
     border-radius: 5px;
     width: 100%;
+
 }
 .fa{
     color: white;
-    padding: 5px;
+    padding: 15px;
     background-color: transparent;
 }
 .fa:hover{
     cursor: pointer;
+    background-color:#282727 ;
+    border-radius: 25px;
+    
+
+}
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1; 
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+}
+.feedDivMain{
+    width: fit-content;
+    margin: 15px;
+}
+.feedDivMain:hover{
+    cursor: pointer;
+    border: 2px solid white;
+}
+img {
+    width: 300px;
+    height: 150px;
+    object-fit: cover;
+}
+.video-title {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.video-description {
+    font-size: 14px;
+    color: #777;
+}
+
+.video-views {
+    font-size: 14px;
+    color: #888;
+}
+#contentBar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
